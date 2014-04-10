@@ -1,6 +1,8 @@
-cog
+angular-cog
 ===========
+declarative ajax requests for angularjs 
 
+###Cog?
 A subordinate member of an organization who performs necessary but usually minor or routine functions.
 
 ###The idea
