@@ -1,0 +1,29 @@
+   
+directive
+
+<div cog-[get,post,put,delete]="{url}" 
+		cog-model="{ng-model}"
+		cog-success="{angular.expression}" 
+		cog-error="{angular.expression}"
+		cog-trigger="{angular.expression}"
+		cog-no-spinner="{true|false}" 
+		cog-absolute-url="{true|false}" 
+		cog-config="{object}">
+</div>
+
+
+config
+
+rootUrl = {url}; //""
+log = {function}; //angular.noop;
+imagePath = {path to spinner}; //"spinner.gif";
+error = {function}; //angular.noop;
+success = {function}; //angular.noop;
+enableSpinner = {true|false}; //true
+
+arguments available
+$data
+$header
+$config
+$status
+

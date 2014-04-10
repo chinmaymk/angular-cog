@@ -1,0 +1,26 @@
+{
+  "name": "angular-cog",
+  "version": "1.0.0",
+  "description": "declarative $http for angularjs",
+  "main": "Gruntfile.js",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-clean": "*",
+    "grunt-ngmin": "0.0.3",
+    "grunt-contrib-watch": "~0.5.3",
+    "karma": "^0.12.6",
+    "grunt-karma": "^0.8.2",
+    "karma-jasmine": "^0.1.5",
+    "karma-chrome-launcher": "^0.1.3",
+    "karma-coverage": "^0.2.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "",
+  "author": "chinmaymk",
+  "license": "MIT"
+}

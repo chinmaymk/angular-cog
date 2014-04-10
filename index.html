@@ -1,0 +1,48 @@
+<!DOCTYPE 5>
+<html ng-app="example">
+
+<head>
+    <title>angular-cog demo!</title>
+</head>
+
+<body ng-controller='MainController'>
+
+    <div cog-get="/utopia/api" cog-success="users.push($data)">
+        {{users}}
+    </div>
+
+    <div cog-get="/utopia/api" cog-error="users.push($data)">
+    </div>
+
+
+    <form cog-post="/utopia/api/project/42/users" 
+    			cog-model="user" 
+    			cog-success="{function|string}" 
+    			cog-error="console.log($data)" 
+    			cog-absolute-url 
+    			cog-config="{object}">
+
+        <input type="text" ng-model="user.name" required>
+        <button type="submit" value="submit">Submit</button>
+    </form>
+
+    <form cog-put="/utopia/api/project/42/users" 
+    			cog-model="user" 
+    			cog-success="{function|string}" 
+    			cog-error="users.push($status)" 
+    			cog-absolute-url 
+    			cog-config="{object}">
+
+        <input type="text" ng-model="user.name" required>
+        <button type="submit" value="submit">Submit</button>
+
+    </form>
+		
+		<button cog-delete="/utopia/api" cog-success="users.push($data)">Submit</button>
+
+    <script type="text/javascript" src="angular.js"></script>
+    <script type="text/javascript" src="angular-cog.js"></script>
+    <script type="text/javascript" src="main.controller.js"></script>
+</body>
+
+</html>
