@@ -82,7 +82,8 @@ angular.module('example').config(function(CogConfigProvider) {
 ###Sample usages
 **cog-get**
 ```html
-<!-- this will trigger a GET /users request and if successful, fill returned data in $scope.users -->
+<!-- this will trigger a GET /users request and 
+if successful, fill returned data in $scope.users -->
 <div cog-get="/users" cog-success="users = $data"></div>
 
 <!-- this will trigger a GET /users request and 
@@ -91,7 +92,8 @@ if failed, call  $scope.checkError function with status code as argument -->
 ```
 **cog-post**
 ```html
-<!-- POST /users will be sent once form is submitted, model defined in cog-model will be sent as payload -->
+<!-- POST /users will be sent once form is submitted, 
+model defined in cog-model will be sent as payload -->
 <!-- on success angular-cog will push newly returned user to $scope.users -->
 <!-- notice the usage of $data, this is inserted by angular-cog -->
 <form cog-post="/users" cog-model="newUser" cog-success="users.push($data)">
@@ -103,7 +105,8 @@ if failed, call  $scope.checkError function with status code as argument -->
 ```
 **cog-put**
 ```html
-<!-- PUT /users will be sent once form is submitted, model defined in cog-model will be sent as data -->
+<!-- PUT /users will be sent once form is submitted, 
+model defined in cog-model will be sent as data -->
 <!-- on success angular-cog will call $scope.enjoySuccess() function -->
 <form cog-put="/users" cog-model="newUser" cog-success="enjoySuccess()">
   <input type="text" ng-model="newUser.name" required/>
