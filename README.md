@@ -82,6 +82,9 @@ angular.module('example').config(function(CogConfigProvider) {
 ###Sample usages
 **cog-get**
 ```html
+<!-- By default, get requests are made as soon as directive is linked
+if you would like to manually trigger the request use cog-trigger -->
+
 <!-- this will trigger a GET /users request and 
 if successful, fill returned data in $scope.users -->
 <div cog-get="/users" cog-success="users = $data"></div>
@@ -119,7 +122,7 @@ model defined in cog-model will be sent as data -->
 
 **cog-delete**
 ```html
-<!-- this will trigger a DELETE /users/1 request and 
+<!-- this will trigger a DELETE /users/1 request on click event of this div and 
 if successful, call  $scope.removeUser function with returned data as argument -->
 <div cog-delete="/users/1" cog-success="removeUser($data)"></div>
 ```
