@@ -64,7 +64,7 @@ for more information please visit [$http](http://docs.angularjs.org/api/ng/servi
 angular-cog allows you to configure following, comment in front of attribute states default value
 ```javascript
 angular.module('example').config(function(CogConfigProvider) {
-  //prepended to every request
+  	//prepended to every request url
 	CogConfigProvider.rootUrl = {url}; //""
 	//log function to call after every request, could be used for tracing
 	CogConfigProvider.log = {function}; //angular.noop;
