@@ -68,8 +68,6 @@ angular.module('example').config(function(CogConfigProvider) {
 	CogConfigProvider.rootUrl = {url}; //""
 	//log function to call after every request, could be used for tracing
 	CogConfigProvider.log = {function}; //angular.noop;
-	//angular-cog can show a nice spinner on page if you want, refer spinner section for more
-	CogConfigProvider.imagePath = {path to spinner}; //"spinner.gif";
 	//this will be called if request returns with error
 	CogConfigProvider.error = {function}; //angular.noop;
 	//this will be called if request returns with success
@@ -132,10 +130,8 @@ It could be a lot of pain to track all ajax requests from view and display loade
 
 To get spinner working in your project follow these steps:
 
-1. Copy ```spinner.gif``` from ```dist ``` folder to appropriate lcoation
-2. Set ```CogConfigProvider.imagePath``` to that location (refer [configuration](#configuration))
-3. Set ```CogConfigProvider.enableSpinner``` to ```true```
-4. Drink tea, tea is good.
+1. Set ```CogConfigProvider.enableSpinner``` to ```true```
+2. There is no step two.
 
 
 By default all requests made by angular-cog will be tracked, to get spinner for your own ajax requests follow this:
@@ -143,7 +139,7 @@ By default all requests made by angular-cog will be tracked, to get spinner for 
 1. Add ```SpinnerService``` as an argument to your controller
 2. Call ```SpinnerService.spin()``` before making the request
 3. Call ```SpinnerService.stop()``` once the response is received (either success or error!)
-4. Finish your tea. 
+4. Drink tea, tea is good.
 
 ###Read too much ? Enjoy this meme
 ![Why don't we](https://raw.githubusercontent.com/chinmaymk/angular-cog/master/why.jpg)
