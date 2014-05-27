@@ -18,7 +18,7 @@
     "karma-coverage": "^0.2.1"
   },
   "scripts": {
-    "test": "karma:unit:run"
+    "test": "grunt karma:unit:run"
   },
   "repository": "",
   "author": "chinmaymk",
