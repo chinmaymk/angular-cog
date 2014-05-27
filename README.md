@@ -58,7 +58,7 @@ $status //angularjs status object
 $headers //angularjs headers object
 $config //angularjs config object
 ```
-for more information please visit [$http](http://docs.angularjs.org/api/ng/service/$http) documentation
+for more information please visit [$http](http://docs.angularjs.org/api/ng/service/$http) documentation.
 
 ###Configuration
 angular-cog allows you to configure following, comment in front of attribute states default value
