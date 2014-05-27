@@ -52,6 +52,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-karma');
 
-  grunt.registerTask('default', ['ngmin', 'concat', 'uglify', 'clean', 'karma:unit:run']);
+  grunt.registerTask('default', ['ngmin', 'concat', 'uglify', 'clean']);
 
 };
