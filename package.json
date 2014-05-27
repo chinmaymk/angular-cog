@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "declarative $http for angularjs",
   "main": "Gruntfile.js",
-  "preinstall" : "npm install -g grunt",
+  "preinstall" : "npm install -g grunt && npm install grunt-cli -g",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-contrib-concat": "*",
