@@ -18,7 +18,7 @@
     "karma-coverage": "^0.2.1"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "karma:unit:run"
   },
   "repository": "",
   "author": "chinmaymk",
