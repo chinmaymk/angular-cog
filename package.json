@@ -19,7 +19,7 @@
     "karma-coverage": "^0.2.1"
   },
   "scripts": {
-    "test": "grunt karma:unit:run"
+    "test": "./node_modules/karma/bin/karma start"
   },
   "repository": "",
   "author": "chinmaymk",
