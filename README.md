@@ -52,7 +52,7 @@ Attribute | Meaning | Example
 **Note:** ```cog-post``` and ```cog-put``` are only allowed on ```<form>``` elements. Refer [sample](#sample-usages) usages for more information.
 
 **Special attributes available from directive**
-```
+```javascript
 $data //angularjs data object
 $status //angularjs status object
 $headers //angularjs headers object
