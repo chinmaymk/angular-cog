@@ -2,10 +2,10 @@ angular-cog
 ===========
 declarative ajax requests for angularjs 
 
-###Cog?
+### Cog?
 A subordinate member of an organization who performs necessary but usually minor or routine functions.
 
-###Groundwork first
+### Groundwork first
 angular-cog exposes few directives that act as helpers for ajax requests. For every request 4 attributes are most important
 
 1. Url
@@ -15,7 +15,7 @@ angular-cog exposes few directives that act as helpers for ajax requests. For ev
 
 angular-cog allows you to configure these from html directive and remove the clutter from javascript.
 
-###Installation
+### Installation
 Installation is very straight forward. Grab the latest zip from github. Copy angular-cog.min.js in your root, and refer it in your page.
 ```html
 <script type='text/javascript' href='path/to/js/angular-cog.min.js'></script>
@@ -24,7 +24,7 @@ Then,add it as dependency in your module
 ```javascript
 angular.module('yourApp', ['angularCog']);
 ```
-###Directive
+### Directive
 ```html
 <!-- verb in cog-verb could be - get, post, put or delete -->
 <div cog-verb="{url}" 
@@ -60,7 +60,7 @@ $config //angularjs config object
 ```
 for more information please visit [$http](http://docs.angularjs.org/api/ng/service/$http) documentation.
 
-###Configuration
+### Configuration
 angular-cog allows you to configure following, comment in front of attribute states default value
 ```javascript
 angular.module('example').config(function(CogConfigProvider) {
@@ -77,7 +77,7 @@ angular.module('example').config(function(CogConfigProvider) {
 });
 ```
 
-###Sample usages
+### Sample usages
 **cog-get**
 ```html
 <!-- By default, get requests are made as soon as directive is linked
@@ -125,7 +125,7 @@ if successful, call  $scope.removeUser function with returned data as argument -
 <div cog-delete="/users/1" cog-success="removeUser($data)"></div>
 ```
 
-###Spinner
+### Spinner
 It could be a lot of pain to track all ajax requests from view and display loaders accordingly. angular-cog provides an easy fix for this problem. Each request is pushed to a stack and poped once returned, and till the stack has atleast one element we display the spinner.
 
 To get spinner working in your project follow these steps:
@@ -141,10 +141,10 @@ By default all requests made by angular-cog will be tracked, to get spinner for 
 3. Call ```SpinnerService.stop()``` once the response is received (either success or error!)
 4. Drink tea, tea is good.
 
-###Read too much ? Enjoy this meme
+### Read too much ? Enjoy this meme
 ![Why don't we](https://raw.githubusercontent.com/chinmaymk/angular-cog/master/why.jpg)
 
-###License
+### License
 The MIT License (MIT)
 
 Copyright (c) 2014 Chinmay Kulkarni
@@ -155,5 +155,5 @@ The above copyright notice and this permission notice shall be included in all c
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
-###Got suggestions ?
+### Got suggestions ?
 Feel free to submit a pull request, file an issue, or get in touch on twitter [@_chinmaymk](https://twitter.com/_chinmaymk)
